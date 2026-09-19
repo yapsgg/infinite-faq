@@ -7,6 +7,17 @@ answer stream in, and watch it slide into the list as a new FAQ item.
 Full-stack and fully designable with Tailwind. Bring your own key, model and
 system prompt.
 
+<p align="center">
+  <video
+    src="https://github.com/user-attachments/assets/b65a1ef3-a3fd-49a8-8c63-903fc01c4e7f"
+    controls
+    muted
+    loop
+    playsinline
+    width="720"
+  ></video>
+</p>
+
 - **Streaming answers** — text appears as it is generated.
 - **Headless or styled** — use `InfiniteFaq` as-is or the `useInfiniteFaq` hook.
 - **Bring your own model** — any [AI SDK](https://ai-sdk.dev) model, with a
