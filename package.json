@@ -1,6 +1,6 @@
 {
   "name": "infinite-faq",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "AI-powered infinite FAQ. Static Q&A plus an ask-anything input that streams answers into the list. Full-stack and fully Tailwind-designable.",
   "license": "MIT",
   "author": "yaps.gg",
@@ -17,7 +17,11 @@
   },
   "type": "module",
   "sideEffects": false,
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
