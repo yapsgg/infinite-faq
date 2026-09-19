@@ -3,6 +3,18 @@
   "version": "0.1.0",
   "description": "AI-powered infinite FAQ. Static Q&A plus an ask-anything input that streams answers into the list. Full-stack and fully Tailwind-designable.",
   "license": "MIT",
+  "author": "yaps.gg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yapsgg/infinite-faq.git"
+  },
+  "homepage": "https://github.com/yapsgg/infinite-faq#readme",
+  "bugs": {
+    "url": "https://github.com/yapsgg/infinite-faq/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
   "type": "module",
   "sideEffects": false,
   "files": ["dist", "README.md", "LICENSE"],
