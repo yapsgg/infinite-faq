@@ -1,0 +1,77 @@
+{
+  "name": "infinite-faq",
+  "version": "0.1.0",
+  "description": "AI-powered infinite FAQ. Static Q&A plus an ask-anything input that streams answers into the list. Full-stack and fully Tailwind-designable.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "files": ["dist", "README.md", "LICENSE"],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./server": {
+      "types": "./dist/server.d.ts",
+      "import": "./dist/server.js",
+      "require": "./dist/server.cjs"
+    },
+    "./openrouter": {
+      "types": "./dist/openrouter.d.ts",
+      "import": "./dist/openrouter.js",
+      "require": "./dist/openrouter.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+    "build": "npm run clean && tsup && node scripts/postbuild.mjs",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "smoke": "node scripts/smoke.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "faq",
+    "ai",
+    "ai-sdk",
+    "react",
+    "nextjs",
+    "tailwind",
+    "openrouter",
+    "streaming",
+    "accordion"
+  ],
+  "peerDependencies": {
+    "ai": ">=5",
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19",
+    "@openrouter/ai-sdk-provider": ">=1"
+  },
+  "peerDependenciesMeta": {
+    "react-dom": {
+      "optional": true
+    },
+    "@openrouter/ai-sdk-provider": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@openrouter/ai-sdk-provider": "^3.1.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "ai": "^7.0.107",
+    "react": "^19",
+    "react-dom": "^19",
+    "tsup": "^8",
+    "typescript": "^5"
+  }
+}

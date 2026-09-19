@@ -1,0 +1,16 @@
+# dependencies
+/node_modules
+
+# build
+/dist
+
+# next.js example
+/examples/**/.next
+/examples/**/node_modules
+
+# misc
+.DS_Store
+*.log
+*.tsbuildinfo
+.env*
+!.env.example

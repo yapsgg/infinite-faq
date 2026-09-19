@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Tell Tailwind to scan the package's compiled output. */
+@source "../node_modules/infinite-faq/dist";
+
+body {
+  background: #0a0a0b;
+  color: #f5f5f7;
+}
